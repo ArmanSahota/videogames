@@ -18,6 +18,28 @@ class Program
         gameStore.ListAllGames();
 
         gameStore.RemoveGame(game2);
-        Console.WriteLine(gameStore); 
+        Console.WriteLine(gameStore);
+
+
+        Console.WriteLine("   ");
+        Console.WriteLine("   ");
+        Console.WriteLine("   ");
+
+        Apple_Orchard orchard = new Apple_Orchard("Green Valley Orchard", 100);
+        Console.WriteLine(orchard); // Green Valley Orchard - Number of Apples: 100
+
+        orchard.PickApples(50);
+        Console.WriteLine(orchard); // Green Valley Orchard - Number of Apples: 150
+
+        orchard.SellApples(20);
+        Console.WriteLine(orchard); // Green Valley Orchard - Number of Apples: 130
+
+        orchard.SellApples(-10);
+        Console.WriteLine(orchard); // Green Valley Orchard - Number of Apples: 130
+
+        Console.ReadLine();
+
+
+
     }
 }
